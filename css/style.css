@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* HOME */
+.app-main {
+  background-color: #e8efef;
+  min-height: 90vh;
+}
+
+.welcom-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Shippori Mincho B1', serif;
+  border-bottom: 1px solid rgb(173, 173, 173);
+  font-style: italic;
+}
+
+.quote-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.home-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-content-container pre {
+  font-size: 28px;
+  font-family: 'Shippori Mincho B1', serif;
+  margin-bottom: 80px;
+}
+
+.home-books-link {
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid rgb(173, 173, 173);
+  background-color: rgb(173, 173, 173);
+  color: white;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.home-books-link:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+/* HEADER */
+
+.app-header {
+  background-color: aliceblue;
+}
+
+.header-content-container {
+  padding: 10px;
+  height: 10vh;
+  font-family: 'Shippori Mincho B1', serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header-content-container nav > *:not(:last-child) {
+  margin-inline-end: 70px;
+}
+
+.router-link-exact-active {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* APP */
+.book-app {
+  min-height: 90vh;
+}
+
+/* FILTER */
+.book-filter {
+  background-color: #e8efef;
+  padding: 20px;
+  height: 100px;
+}
+
+.book-filter input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.book-filter button {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+/* LIST */
+.book-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  background-color: #e8efef;
+}
+
+/* PREVIEW */
+
+.book-preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 260px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin-block-end: 10px;
+  margin-inline-end: 10px;
+  background-color: rgb(239 248 255);
+  padding: 15px;
+  cursor: pointer;
+  line-height: 2rem;
+  box-shadow: 5px 5px 15px 2px #000000;
+}
+
+.book-preview-title {
+  text-transform: capitalize;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 22px;
+}
+
+/* DETAILS */
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 10px;
+  height: 100vh;
+  background-color: #e8efef;
+}
+
+.book-details h2 {
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+.book-details p {
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  font-size: 19px;
+}
+
+.book-details button {
+  border: none;
+  border-radius: 5px;
+  color: rgb(159, 71, 71);
+  background-color: transparent;
+  margin-bottom: 12px;
+}
+
+.green {
+  border: 3px solid rgb(127, 160, 127);
+}
+
+.red {
+  border: 3px solid rgb(108, 64, 64);
+}
+
+.review-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.review-list .review-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin-inline-end: 20px;
+  border: 1px solid #bebcbc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-block-end: 10px;
+}
+
+.review-list .review-item ul{
+  display: flex;
+  justify-content: center;
+  color: orange;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* HELPERS */
+
+.main-container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+/* REVIEW */
+
+.review-page{
+  font-family: 'Shippori Mincho B1';
+  background-color: #e8efef;
+  height: 90vh;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.review-form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(173, 173, 173);
+}
+
+.review-form textarea {
+  margin-block-end: 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(173, 173, 173);
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+}
+
+.review-form .rate {
+  display: flex;
+  margin-block-end: 15px;
+}
+.review-form .read-at {
+  display: flex;
+  align-items: center;
+  margin-block-end: 15px;
+}
+
+.review-form .read-at input {
+  margin-inline-start: 5px;
+}
+
+.review-rate {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-inline-start: 5px;
+}
+
+.review-rate li::after {
+  content: '☆';
+  color: orange;
+}
+.review-rate li.fill::after {
+  content: '★';
+}
+
+/* MEDIA */
+@media (max-width: 1100px) {
+  .main-container {
+    max-width: 840px;
+  }
+}
